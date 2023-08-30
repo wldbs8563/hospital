@@ -66,7 +66,7 @@ main .box .box_btm a span {
     display:block;
     color:#fff; margin-top:30px;
 }
-main .box .box_btm a:hover {border:5px solid #8EC31F}
+main .box .box_btm a:hover {background:#8EC31F;}
 /* center_title */
 main .center_title {
     width:1200px;
