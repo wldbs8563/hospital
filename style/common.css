@@ -82,5 +82,37 @@ header .line .h_btm .nav_bg {
     z-index:1; background:#fff; border-top:1px solid #aaa;
 }
 header .line .h_btm .h_btm_right  {}
-header .line .h_btm .h_btm_right a  {}
+header .line .h_btm .h_btm_right a:last-child {margin-left:20px;}
 header .line .h_btm .h_btm_right a img  {}
+/* footer */
+footer {
+    width:calc(100% - 240px); margin:50px auto;
+}
+footer .f_top {
+    display:flex; align-items:center;
+    justify-content:space-between;
+    padding:10px 0;
+}
+footer .f_top h1 {}
+footer .f_top h1 a {}
+footer .f_top h1 a img {}
+footer .f_top .f_nav {}
+footer .f_top .f_nav a {
+    padding-left:20px;
+}
+footer .f_top .f_nav a:first-child {padding-left:0;}
+footer .f_top .f_nav a:hover {color:#2E4198;}
+footer .f_btm {
+    display:flex; justify-content:space-between;
+    align-items:center; margin:10px 0;
+}
+footer .f_btm address {}
+footer .f_btm address span {
+    line-height:30px; margin-left:10px;
+}
+footer .f_btm .sns {}
+footer .f_btm .sns a { margin-left:30px;}
+footer .f_btm .sns a img {}
+footer > p {
+    text-align:center; margin:50px 0;
+}

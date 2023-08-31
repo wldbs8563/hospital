@@ -1,0 +1,88 @@
+/* header */
+header {}
+header .reserve_line {
+    border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+}
+header .reserve_line .top {
+    height:40px; width:1200px;
+    margin:0 auto; display:flex;
+    align-items: center;
+}
+header .reserve_line .top a {}
+header .reserve_line .top a img {}
+header .reserve_line .top p {color:#999999;}
+header .reserve_line .top p img {margin:0 20px;}
+/* reserve */
+main {
+    
+}
+main h1 {
+    font-size:3.157rem; font-weight:700;
+    text-align:center; margin-top:50px;
+}
+main .reserve_btn {
+    margin:50px auto; text-align:center;
+    border:1px solid #aaa;
+    width:480px; height:50px;
+    display:flex;
+}
+main .reserve_btn a {
+    display:inline-block;
+    width:240px; height:50px;
+    padding-top:12px; font-size:1.333rem;
+}
+main .reserve_btn a.active {background:#0081CC; color:#fff;}
+main .reserve_title {width:1200px; margin:0 auto;}
+main .reserve_title .reserve {margin:50px 0;}
+main .reserve_title .reserve h2 {
+    font-size:1.777rem; display:flex; flex-flow:column nowrap;
+    width:150px; text-align:center;
+}
+main .reserve_title .reserve h2::after {
+    content:''; width:150px; height:5px;
+    background:#555; display:inline-block; margin-top:20px;
+}
+main .reserve_title .reserve .box {
+    border-top:1px solid #aaa; width:1200px;
+    padding:40px 100px;
+}
+main .reserve_title .reserve .box .image {}
+main .reserve_title .reserve .box .image img {}
+main .reserve_title .reserve .box .txt {
+    display:flex; flex-flow:column nowrap;
+    margin-top:50px;
+}
+main .reserve_title .reserve .box .txt >* {
+    font-size:1.333rem; line-height:40px;
+}
+main .reserve_title .reserve .box .txt em {color:#0081CC;}
+main .reserve_title .reserve .box .txt span {}
+main .reserve_title .reserve .box2 .txt span {margin-left:20px;}
+main .reserve_title a {
+    width:240px; height:50px;
+    background:#0081CC; display:inline-block;
+    font-size:1.333rem; color:#fff;
+    line-height:50px; text-align:center;
+    border-radius:15px; margin:0 480px 100px 480px;
+}
+/* warning */
+main .warning_bg {
+    width:100%;
+    background:#f4f4f4;
+}
+main .warning {
+    width:1200px; height:200px; margin:50px auto;
+    display:flex; justify-content: center;
+    align-items:center;
+}
+main .warning p {}
+main .warning p img {}
+main .warning .txt {
+    margin-left:50px;
+}
+main .warning .txt h3 {
+    font-size:1.777rem; font-weight:700;
+    margin-bottom:20px;
+}
+main .warning .txt p {line-height:40px;}
