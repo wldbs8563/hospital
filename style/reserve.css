@@ -1,18 +1,18 @@
 /* header */
-header {}
-header .reserve_line {
+section {}
+section .reserve_line {
     border-top:1px solid #aaa;
     border-bottom:1px solid #aaa;
 }
-header .reserve_line .top {
+section .reserve_line .top {
     height:40px; width:1200px;
     margin:0 auto; display:flex;
     align-items: center;
 }
-header .reserve_line .top a {}
-header .reserve_line .top a img {}
-header .reserve_line .top p {color:#999999;}
-header .reserve_line .top p img {margin:0 20px;}
+section .reserve_line .top a {}
+section .reserve_line .top a img {}
+section .reserve_line .top p {color:#999999;}
+section .reserve_line .top p img {margin:0 20px;}
 /* reserve */
 main {
     
@@ -25,12 +25,13 @@ main .reserve_btn {
     margin:50px auto; text-align:center;
     border:1px solid #aaa;
     width:480px; height:50px;
-    display:flex;
+    display:flex; overflow:hidden;
 }
 main .reserve_btn a {
     display:inline-block;
     width:240px; height:50px;
     padding-top:12px; font-size:1.333rem;
+    background:#fff;
 }
 main .reserve_btn a.active {background:#0081CC; color:#fff;}
 main .reserve_title {width:1200px; margin:0 auto;}

@@ -1,0 +1,56 @@
+/* header */
+section {}
+section .reserve_line {
+    border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+}
+section .reserve_line .top {
+    height:40px; width:1200px;
+    margin:0 auto; display:flex;
+    align-items: center;
+}
+section .reserve_line .top a {}
+section .reserve_line .top a img {}
+section .reserve_line .top p {color:#999999;}
+section .reserve_line .top p img {margin:0 20px;}
+/* main */
+main {}
+main h1 {
+    font-size:3.157rem; font-weight:700;
+    text-align:center; margin-top:50px;
+}
+main .doctor_btn {
+    margin:50px auto; text-align:center;
+    border:1px solid #aaa;
+    width:1200px; height:50px;
+    display:flex; overflow:hidden;
+}
+main .doctor_btn a {
+    display:inline-block;
+    width:240px; height:50px;
+    padding-top:12px; font-size:1.333rem;
+    background:#fff; border-right:1px solid #aaa;
+}
+main .doctor_btn a:last-child {border-right:none;}
+main .doctor_btn a.active {background:#0081CC; color:#fff;}
+main .doctor_title {
+    width:1200px; margin:0 auto;
+}
+main .doctor_title .doctor {}
+main .doctor_title .doctor a {
+    border:1px solid #aaa;
+    display:inline-block; margin-right:12px;
+    position:relative; margin-bottom:30px;
+}
+main .doctor_title .doctor a:nth-child(4n) {margin-right:0;}
+main .doctor_title .doctor a img {}
+main .doctor_title .doctor a .detail {
+    position:absolute; height:100%; width:100%; z-index:1;
+    top:0;
+}
+main .doctor_title .doctor a .detail p {
+    background:#0081CC; color:#fff;
+    text-align:center; width:70px; height:70px;
+    border-radius:50%; line-height:70px;
+    margin:140px 108px;
+}

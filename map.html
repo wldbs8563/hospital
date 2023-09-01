@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오시는길 | 인천사랑병원</title>
+        <!-- 글꼴 -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./images/logo_2.png" type="image/x-icon">
+        <link rel="icon" href="./images/logo_2.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/common.css">
+</head>
+<body>
+    <?php include("./header.php") ?>
+    <main>
+        <h1>오시는길</h1>
+        <div id="map"><!-- 지도삽입위치 --></div>
+    </main>
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+    <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b59bc979ed0a0350334dda9b08ff634f">
+    </script>
+    <script>
+        var map = new kakao.maps.Map(37.4622095,126.6806986); //지도 생성 및 객체 리턴
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(위도, 경도), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        var marker = new kakao.maps.Marker({
+	    position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>
