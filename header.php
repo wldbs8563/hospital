@@ -35,11 +35,11 @@
                             </div>
                         </li>
                         <li>
-                            <a href="./dortor.html">진료과·의료진</a>
+                            <a href="./doctor.html">진료과·의료진</a>
                             <div class="sub">
-                                <a href="./dortor.html">의료진</a>
-                                <a href="./dortor.html">진료과</a>
-                                <a href="./dortor.html">진료전문센터</a>
+                                <a href="./doctor.html">의료진</a>
+                                <a href="./doctor.html">진료과</a>
+                                <a href="./doctor.html">진료전문센터</a>
                             </div>
                         </li>
                         <li>
@@ -54,14 +54,14 @@
                             </div>
                         </li>
                         <li>
-                            <a href="./doctor.html">병원소개</a>
+                            <a href="./map.html">병원소개</a>
                             <div class="sub">
-                                <a href="./doctor.html">오시는길</a>
-                                <a href="./doctor.html">인사말</a>
-                                <a href="./doctor.html">병원둘러보기</a>
-                                <a href="./doctor.html">입원생활안내</a>
-                                <a href="./doctor.html">진료협력센터</a>
-                                <a href="./doctor.html">장례식장</a>
+                                <a href="./map.html">오시는길</a>
+                                <a href="./map.html">인사말</a>
+                                <a href="./map.html">병원둘러보기</a>
+                                <a href="./map.html">입원생활안내</a>
+                                <a href="./map.html">진료협력센터</a>
+                                <a href="./map.html">장례식장</a>
                             </div>
                         </li>
                     </ul>

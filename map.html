@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오시는길 | 인천사랑병원</title>
-        <!-- 글꼴 -->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-        <!-- 파비콘 -->
-        <link rel="shortcut icon" href="./images/logo_2.png" type="image/x-icon">
-        <link rel="icon" href="./images/logo_2.png" type="image/x-icon">
-        <link rel="stylesheet" href="./style/reset.css">
-        <link rel="stylesheet" href="./style/common.css">
+    <!-- 글꼴 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo_2.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <style>
+        main {
+            width:700px; margin:50px auto;
+        }
+        main h1 {
+            font-size:1.333rem; font-weight:600;
+            margin-bottom:20px;
+        }
+        main p {margin-top:20px;}
+        #map {
+            background:aqua;
+            height:500px;
+        }
+    </style>
 </head>
 <body>
     <?php include("./header.php") ?>
@@ -20,19 +34,20 @@
     </main>
     <?php include("./footer.php") ?>
     <script src="./script/common.js"></script>
-    <script type="text/javascript"
-    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b59bc979ed0a0350334dda9b08ff634f">
-    </script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=25fa566783fc5cd7ea4b4f015c5912b7"></script>
     <script>
-        var map = new kakao.maps.Map(37.4622095,126.6806986); //지도 생성 및 객체 리턴
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(위도, 경도), //지도의 중심좌표.
+            center: new kakao.maps.LatLng(37.4622095,126.6806986), //지도의 중심좌표.
             level: 3 //지도의 레벨(확대, 축소 정도)
         };
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPosition  = new kakao.maps.LatLng(37.4622095,126.6806986); 
+        // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
-	    position: markerPosition
+            position: markerPosition
         });
+        // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
     </script>
 </body>
